@@ -5,6 +5,7 @@
 #include "TwoLinkedList.h"
 #include <string>
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
@@ -120,9 +121,20 @@ string TwoLinkedList::getlist(int list) {
     return text;
 }
 
-Node *search() {}
+Node *TwoLinkedList::search(int Nvalue) {
+    int count = 0;
+    Node *temp = head1;
+    while (temp != nullptr) {
+        if (temp->value == Nvalue) {
+            temp = temp->next;
+        }
+    }
+    return count;
+}
 
 void save(string root) {
+    fstream archivo;
+    archivo.open(root, ios::in);
 
 }
 

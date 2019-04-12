@@ -37,13 +37,14 @@ namespace UTEC {
             tail2 = nullptr;
             tail = nullptr;
         }
+        ~TwoLinkedList(){}
 
         void push_back1(int Nvalue);
         void push_back2(int Nvalue);
         std::string merge(int Nvalue);
         bool is_merged();
         std::string getlist(int list);
-        Node *search();
+        Node *search(int Nvalue);
         int size(int list);
         void save(std::string root);
         void load();
